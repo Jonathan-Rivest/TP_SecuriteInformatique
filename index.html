@@ -8,6 +8,8 @@
     <h1>Application de sécurité Web App Pen Test</h1>
     <p>Date de l'analyse de sécurité: </p>
     <p id="dateActuelle"></p>
+    <p>Nombre total de malware(s) détectés: </p>
+    <p id="total"></p>
     <script>
         let text = ""
   let i = 1;
@@ -19,6 +21,7 @@
     while (i <10);
     const date = new Date();
     document.getElementById("dateActuelle").innerHTML = date;
+    document.getElementById("total").innerHTML = i;
     </script>
 </body>
 </html>
