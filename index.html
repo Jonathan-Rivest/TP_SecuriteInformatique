@@ -5,6 +5,8 @@
         <title>Web App Pen Test</title>
     </head>
 <body>
+    <p>Date de l'analyse de sécurité: </p>
+    <p id="dateActuelle"></p>
     <script>
         let text = ""
   let i = 1;
@@ -14,6 +16,8 @@
       i++;
       } 
     while (i <10);
+    const date = new Date();
+    document.getElementById("dateActuelle").innerHTML = date;
     </script>
 </body>
 </html>
