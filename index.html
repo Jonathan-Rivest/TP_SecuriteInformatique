@@ -6,22 +6,22 @@
     </head>
 <body>
     <h1>Application de sécurité Web App Pen Test</h1>
-    <p>Date de l'analyse de sécurité: </p>
+    <p>Date du test: </p>
     <p id="dateActuelle"></p>
     <p>Nombre total de malware(s) détectés: </p>
     <p id="total"></p>
     <script>
-        let text = ""
   let i = 1;
     do 
       {
       alert("Votre ordinateur est attaqué par: " + i + " malware(s)");
       i++;
       } 
+      // Boucle alertant à propos du nombre de malwares dans des boîtes d'alertes
     while (i <10);
     const date = new Date();
-    document.getElementById("dateActuelle").innerHTML = date;
-    document.getElementById("total").innerHTML = i;
+    document.getElementById("dateActuelle").innerHTML = date; //Pour afficher la date du test sur la page
+    document.getElementById("total").innerHTML = i; //Pour afficher le nombre malwares détectés sur la page
     </script>
 </body>
 </html>
